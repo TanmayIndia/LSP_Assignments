@@ -1,0 +1,2 @@
+int Loader();
+void Factorial();
