@@ -12,7 +12,7 @@ ssize_t Ret;
 char Buffer[1024]={'\0'};
 
 fd=(int) ptr;
-
+lseek(fd,0,SEEK_SET);
 while((Ret=read(fd,Buffer,sizeof(Buffer))) != 0)
 {
  for(i=0;i<Ret;i++)
